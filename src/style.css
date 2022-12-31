@@ -19,3 +19,7 @@ body {
   height: 700px;
   scroll-behavior: smooth;
 }
+#menu-first-item {
+  position: relative;
+  top: 20px;
+}

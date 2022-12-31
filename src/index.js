@@ -13,15 +13,22 @@ function swapMenu(n) {
   }
 }
 let container = document.getElementById("container");
+let firstItem = document.getElementById("menu-first-item");
+let int = 0;
 function changeMenu() {
   console.log(container.scrollTop);
-  //   console.log(container.scrollHeight);
-  //   console.log(container.scrollHeight - container.scrollTop);
-  //   console.log(container.clientHeight);
-
-  if (container.scrollTop <= 626 && container.scrollTop >= 0) {
+  if (container.scrollTop <= 500 && container.scrollTop >= 0) {
     menu = ["Roja", "About", "Work", "Les Chats!", "Contact"];
     regularMenu();
+    function move() {
+      if (int === 700) {
+        clearInterval(t);
+      }
+      int += 42;
+      firstItem.style.transform = "translateX(" + int + "px)";
+      console.log(int);
+    }
+    let t = setInterval(move, 1000);
   }
 
   if (container.scrollTop >= 626) {
