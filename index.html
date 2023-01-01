@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
   </head>
   <body>
+    <h1 class="headline load-hidden">Widget Inc.</h1>
+    <!-- style extension (implicit) -->
+    <ul class="widget-list">
+      <li class="widget">1</li>
+      <li class="widget">2</li>
+      <li class="widget">3</li>
+      <li class="widget">4</li>
+      <li class="widget">5</li>
+    </ul>
+
     <div id="container">
       <div class="nav-container">
         <ul class="nav" id="nav">
@@ -19,7 +34,7 @@
         </ul>
       </div>
       <div id="roja-page">
-        <h2>Roja</h2>
+        <h2 class="roja">Roja</h2>
         <br />
         <br />
         <br />
@@ -94,6 +109,11 @@
       </div>
     </div>
 
+    <script>
+      ScrollReveal().reveal(".headline", { duration: 2000 });
+      ScrollReveal().reveal(".widget", { interval: 200 });
+      ScrollReveal().clear(".roja", { duration: 2000 });
+    </script>
     <script src="src/index.js"></script>
   </body>
 </html>
