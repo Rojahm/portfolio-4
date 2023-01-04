@@ -13,24 +13,14 @@
     />
   </head>
   <body>
-    <h1 class="headline load-hidden">Widget Inc.</h1>
-    <!-- style extension (implicit) -->
-    <ul class="widget-list">
-      <li class="widget">1</li>
-      <li class="widget">2</li>
-      <li class="widget">3</li>
-      <li class="widget">4</li>
-      <li class="widget">5</li>
-    </ul>
-
     <div id="container">
       <div class="nav-container">
         <ul class="nav" id="nav">
-          <li id="menu-first-item"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li id="roja" class="widget"></li>
+          <li id="about" class="widget"></li>
+          <li id="work" class="widget"></li>
+          <li id="lechat" class="widget"></li>
+          <li id="contact" class="widget"></li>
         </ul>
       </div>
       <div id="roja-page">
@@ -109,11 +99,6 @@
       </div>
     </div>
 
-    <script>
-      ScrollReveal().reveal(".headline", { duration: 2000 });
-      ScrollReveal().reveal(".widget", { interval: 200 });
-      ScrollReveal().clear(".roja", { duration: 2000 });
-    </script>
     <script src="src/index.js"></script>
   </body>
 </html>

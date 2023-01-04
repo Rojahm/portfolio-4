@@ -1,18 +1,22 @@
-ul {
-  list-style: none;
-}
-.nav-container {
-  position: fixed;
-  width: 100%;
-  transition: all 200ms ease-in-out;
+li {
+  transition-delay: 1s;
+  transition: all 2s;
 }
 .nav {
+  list-style: none;
   display: flex;
-  flex-direction: row;
+  width: 95vw;
+  position: fixed;
+  /* text-align: center; */
+  /* flex-direction: row; */
   justify-content: space-evenly;
+  background: black;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
 }
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #container {
   overflow-y: scroll;
@@ -20,28 +24,25 @@ body {
   scroll-behavior: smooth;
 }
 #menu-first-item {
-  position: relative;
-  top: 20px;
+  transition: visibility 2s 1s, opacity 2s;
 }
-.trans {
+
+.hidden {
+  transition: visibility 2s 1s, opacity 1s;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+/* .trans {
   visibility: visible;
   opacity: 0;
   transform: matrix3d(0.85, 0, 0, 0, 0, 0.85, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s,
     transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
-}
-html.sr .load-hidden {
+} */
+/* html.sr .load-hidden {
   visibility: hidden;
-}
-
-.widget-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: black;
-  border-radius: 8px;
-}
+} */
 
 .widget {
   width: 15%;
@@ -55,6 +56,6 @@ html.sr .load-hidden {
 }
 
 /* extension */
-html.sr .widget {
+/* html.sr .widget {
   visibility: hidden;
-}
+} */
