@@ -5,100 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      href="http://anijs.github.io/lib/anicollection/anicollection.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="container">
-      <div class="nav-container">
-        <ul class="nav" id="nav">
-          <li id="roja" class="widget"></li>
-          <li id="about" class="widget"></li>
-          <li id="work" class="widget"></li>
-          <li id="lechat" class="widget"></li>
-          <li id="contact" class="widget"></li>
-        </ul>
-      </div>
-      <div id="roja-page">
-        <h2 class="roja">Roja</h2>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
-      <div id="about-page">
-        <h2>About</h2>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    <div class="nav-container fixed-top" id="scrollspy">
+      <ul class="nav">
+        <li class="menu-item">
+          <a class="color-roja" href="#roja">Roja</a>
+        </li>
+        <li class="menu-item">
+          <a class="color-about" href="#about">About</a>
+        </li>
+        <li class="menu-item">
+          <a class="color-work" href="#work">Work</a>
+        </li>
+        <li class="menu-item">
+          <a class="color-lechat" href="#lechats">Lechats</a>
+        </li>
+        <li class="menu-item">
+          <a class="color-contact" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="mt-4"
+      data-bs-spy="scroll"
+      data-bs-target="#footer"
+      tabindex="0"
+      data-bs-smooth-scroll="true"
+    >
+      <div
+        class="page"
+        data-bs-spy="scroll"
+        data-bs-target="#scrollspy"
+        data-bs-target="#footer"
+        tabindex="0"
+        data-bs-smooth-scroll="true"
+      >
+        <div id="roja">
+          <div class="page-top">
+            <span>
+              <p>👋 Hi I’m</p>
+              <h2 class="color-roja">Roja</h2>
+            </span>
+          </div>
+          <div class="content-tile">
+            <div class="content-container">
+              <h1>Roja Hosseini - EMEA based front-end developer</h1>
+              <p>
+                currently i’m building HTML, CSS, JS mixed projects everyday and
+                have fun with it 🤘. I was an I.T. administrator for about 10
+                years🤓, then it got boring and now I’m studying new I.T and
+                cloud☁ technologies and freelance front-end developer. Swimming
+                🏊‍♀️ and bicycle riding 🚴‍♀️ are my activities. I also practice
+                Piano 🎹 and study music theory 🎶.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <div id="about">
+            <div class="page-top">
+              <span>
+                <p>This is</p>
+                <h2 class="color-about">About</h2>
+                <p class="second-part">me!</p>
+              </span>
+            </div>
+            <div class="content-tile">
+              <div class="content-container">
+                <h1>Roja Hosseini - EMEA based front-end developer</h1>
+                <p>
+                  currently i’m building HTML, CSS, JS mixed projects everyday
+                  and have fun with it 🤘. I was an I.T. administrator for about
+                  10 years🤓, then it got boring and now I’m studying new I.T
+                  and cloud☁ technologies and freelance front-end developer.
+                  Swimming 🏊‍♀️ and bicycle riding 🚴‍♀️ are my activities. I also
+                  practice Piano 🎹 and study music theory 🎶.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <div id="work"></div>
+        </div>
+        <div class="page">
+          <div id="cats"></div>
+        </div>
+        <div class="page">
+          <div id="contact"></div>
+        </div>
       </div>
     </div>
-
-    <script src="src/index.js"></script>
+    <div id="footer" class="fixed-bottom text-center">
+      <a href="#roja" class="footer-item footer-roja">
+        <div>about</div>
+      </a>
+      <a href="#about" class="footer-item footer-about">
+        <div>Work</div>
+      </a>
+      <a href="#work" class="footer-item footer-work">
+        <div>Lechats!</div>
+      </a>
+      <a href="#cats" class="footer-item footer-cats">
+        <div>Contact</div>
+      </a>
+      <a href="#contact" class="footer-item footer-contact">
+        <div>Roja</div>
+      </a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
