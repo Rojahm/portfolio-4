@@ -195,6 +195,10 @@ a:hover {
     width: 60%;
     padding-bottom: 20px;
   }
+  .footer-contact a {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 @media (max-width: 800px) {
   .content-container {
@@ -234,9 +238,5 @@ a:hover {
   }
   .content {
     padding-bottom: 20px;
-  }
-  .footer-contact a {
-    width: 100%;
-    font-size: 14px;
   }
 }
