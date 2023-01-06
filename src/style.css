@@ -68,24 +68,26 @@ h2 {
   position: relative;
   top: -63px;
 }
-/* .page-top {
+.page-top {
+  display: flex;
+  flex-direction: row;
   height: 16vh;
-  position: relative;
-  text-align: center;
+  justify-content: center;
 }
 .page-top p {
-  position: relative;
+  /* position: relative;
   top: -19px;
-  right: 90px;
+  right: 90px; */
   font-weight: 700;
   font-size: 48px;
 }
 .page-top h2 {
-  position: relative;
+  /* position: relative;
   top: -95px;
-  right: -93px;
+  right: -93px; */
   font-size: 64px;
 }
+/*
 .page-top .second-part {
   position: relative;
   top: -165px;
