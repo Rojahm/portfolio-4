@@ -178,3 +178,14 @@ a:hover {
     padding-top: 100px;
   }
 }
+@media (max-width: 380px) {
+  .page {
+    margin-top: 50px;
+  }
+  .content-container {
+    padding: 45px 7px;
+  }
+  #work .content-container {
+    padding: 10px 7px;
+  }
+}
