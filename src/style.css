@@ -71,10 +71,7 @@ a:hover {
 .page-top h2 {
   font-size: 64px;
 }
-.second-part {
-}
 .content-tile {
-  height: 70vh;
   position: relative;
   top: -63px;
 }
@@ -92,7 +89,7 @@ a:hover {
 #work .content-tile {
   background-color: rgba(118, 5, 231, 0.2);
 }
-#cats .content-tile {
+#lechats .content-tile {
   background-color: rgba(231, 100, 5, 0.2);
 }
 #contact .content-tile {
@@ -104,14 +101,34 @@ a:hover {
 .container .active {
   opacity: 1 !important;
 }
-#roja .content-container {
-  padding-top: 130px;
-}
 #roja .content {
   font-size: larger;
 }
+#about .page-top {
+  margin-top: 150px;
+}
 #work img {
   max-width: 70%;
+}
+#work .content {
+  padding-top: 50px;
+}
+#contact .content-tile {
+  margin-bottom: 100px;
+}
+.btn {
+  font-family: var(--primary-font);
+  border: solid;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  color: white;
+}
+#work .btn:hover {
+  background-color: var(--work-color);
+}
+#lechats .btn:hover {
+  background-color: var(--cat-color);
 }
 .footer-item {
   display: none;
@@ -120,9 +137,14 @@ a:hover {
   height: 5vh;
   margin: 0 auto;
   padding-top: 5px;
+  transition: all 200ms ease-in-out;
+}
+.contact-text {
+  display: flex;
 }
 .footer-item:hover {
   color: white;
+  opacity: 1;
 }
 .footer-roja {
   background-color: var(--about-color);
@@ -143,6 +165,10 @@ a:hover {
 .footer-contact {
   background-color: var(--roja-color);
   color: white;
+  border-radius: 90px 90px 0px 0px;
+}
+.footer-contact .active {
+  opacity: 1 !important;
 }
 @media (max-width: 500px) {
   .page {
@@ -174,16 +200,28 @@ a:hover {
   #work .content-container {
     padding: 50px 70px;
   }
-  #roja .content-container {
-    padding-top: 100px;
+  #work .content {
+    padding-top: 0;
   }
-}
-@media (max-width: 380px) {
+  #about .page-top {
+    margin-top: unset;
+  }
+  #roja .page {
+    margin-top: 100px;
+  }
   .page {
     margin-top: 50px;
   }
+}
+@media (max-width: 380px) {
   .content-container {
     padding: 45px 7px;
+  }
+  .page {
+    margin-top: 0;
+  }
+  #roja .page {
+    margin-top: 70px;
   }
   #work .content-container {
     padding: 10px 7px;
