@@ -81,7 +81,7 @@ a:hover {
   font-size: 20px;
 }
 #roja .content-tile {
-  background-color: rgba(143, 190, 38, 0.2);
+  background-color: rgba(143, 190, 38, 0.3);
 }
 #about .content-tile {
   background-color: rgba(5, 82, 231, 0.2);
@@ -112,6 +112,9 @@ a:hover {
 }
 #work .content {
   padding-top: 50px;
+}
+#lechats .content {
+  padding-top: 150px;
 }
 #contact .content-tile {
   margin-bottom: 100px;
@@ -203,6 +206,9 @@ a:hover {
   #work .content {
     padding-top: 0;
   }
+  #lechats .content {
+    padding-top: 0;
+  }
   #about .page-top {
     margin-top: unset;
   }
@@ -225,5 +231,12 @@ a:hover {
   }
   #work .content-container {
     padding: 10px 7px;
+  }
+  .content {
+    padding-bottom: 20px;
+  }
+  .footer-contact a {
+    width: 100%;
+    font-size: 14px;
   }
 }
